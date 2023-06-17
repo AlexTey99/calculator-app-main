@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="index.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <title>Frontend Mentor | Calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body class="dark">
+  <div class="main-container">
+    <p id="sequeceNumbers" class="sequence-numbers dark">123</p>
+    <div class="from-container">
+      <h3 id="clac" class="clac dark">calc</h3>
+      <p id="theme" class="theme dark">theme</p>
+      <div id="FromBottomInteractiveContainer" class="fromb-bottom-interactive-container dark">
+        <div id="CircleActive" onclick="controlToogle()" class="circle-active one dark"></div>
+      </div>
+    </div>
+
+    <div class="big-input-container">
+      <input id="bigInput" class="big-input dark" oninput="sumInput()" readonly="readonly">
+    </div>
+
+    <div id="NumberCalculateContainer" class="numbers-calculate-container dark">
+      <button id="7" class="all-numbers" onclick="printsAllNumbers('7')">7</button>
+      <button id="8" class="all-numbers" onclick="printsAllNumbers('8')">8</button>
+      <button id="9" class="all-numbers" onclick="printsAllNumbers('9')">9</button>
+      <button id="Delettle" class="Delettle dark" onclick="Del()">DEL</button>
+      <button id="4" class="all-numbers" onclick="printsAllNumbers('4')">4</button>
+      <button id="5" class="all-numbers" onclick="printsAllNumbers('5')">5</button>
+      <button id="6" class="all-numbers" onclick="printsAllNumbers('6')">6</button>
+      <button id="+" class="all-numbers" onclick="printsAllNumbers('+')">+</button>
+      <button id="1" class="all-numbers" onclick="printsAllNumbers('1')">1</button>
+      <button id="2" class="all-numbers" onclick="printsAllNumbers('2')">2</button>
+      <button id="3" class="all-numbers" onclick="printsAllNumbers('3')">3</button>
+      <button id="-" class="all-numbers" onclick="printsAllNumbers('-')">-</button>
+      <button id="." class="all-numbers" onclick="printsAllNumbers('.')">.</button>
+      <button id="0" class="all-numbers" onclick="printsAllNumbers('0')">0</button>
+      <button id="/" class="all-numbers" onclick="printsAllNumbers('/')">/</button>
+      <button id="*" class="all-numbers" onclick="printsAllNumbers('*')">*</button>
+      <div class="result-bottom-container">
+        <button id="Reset" class="left-bottom dark" onclick="Reset()">RESET</button>
+        <button id="Result" class="right-bottom dark" onclick="Result()">=</button>
+      </div>
+    </div>
+
+  </div>
+
+
+
+  <script src="index.js"></script>
+
+</body>
+
+</html>

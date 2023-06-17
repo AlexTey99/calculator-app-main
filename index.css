@@ -1,0 +1,331 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+}
+body.dark {
+  background: hsl(222, 26%, 31%);
+}
+body.white {
+  background: hsl(0, 0%, 90.2%);
+}
+body.purple {
+  background: hsl(268.33, 75%, 9.41%);
+}
+body .main-container {
+  height: 500px;
+  width: 375px;
+}
+@media screen and (max-width: 375px) {
+  body .main-container {
+    height: 90%;
+    width: 90%;
+  }
+}
+body .main-container .sequence-numbers {
+  display: flex;
+  justify-content: end;
+  letter-spacing: 9px;
+  color: white;
+}
+body .main-container .sequence-numbers.dark {
+  color: white;
+}
+body .main-container .sequence-numbers.white {
+  color: black;
+}
+body .main-container .sequence-numbers.purple {
+  color: hsl(54, 99.06%, 58.43%);
+}
+body .main-container .from-container {
+  display: flex;
+}
+body .main-container .from-container .clac {
+  color: white;
+}
+body .main-container .from-container .clac.dark {
+  color: white;
+}
+body .main-container .from-container .clac.white {
+  color: black;
+}
+body .main-container .from-container .clac.purple {
+  color: hsl(54, 99.06%, 58.43%);
+}
+@media screen and (max-width: 375px) {
+  body .main-container .from-container .clac {
+    font-size: 25px;
+  }
+}
+body .main-container .from-container .theme {
+  display: flex;
+  margin-left: 250px;
+  color: white;
+  margin-right: 5px;
+  font-size: 12px;
+  align-items: center;
+}
+body .main-container .from-container .theme.dark {
+  color: white;
+}
+body .main-container .from-container .theme.white {
+  color: black;
+}
+body .main-container .from-container .theme.purple {
+  color: hsl(54, 99.06%, 58.43%);
+}
+@media screen and (max-width: 375px) {
+  body .main-container .from-container .theme {
+    margin-left: 175px;
+    font-size: 18px;
+  }
+}
+body .main-container .from-container .fromb-bottom-interactive-container {
+  background: black;
+  display: flex;
+  margin: 5px;
+  height: 15px;
+  width: 47px;
+  overflow: hidden;
+  padding: 2px;
+  border-radius: 30px;
+}
+body .main-container .from-container .fromb-bottom-interactive-container.dark {
+  background: black;
+}
+body .main-container .from-container .fromb-bottom-interactive-container.white {
+  background: hsl(351.43, 7.53%, 81.76%);
+}
+body .main-container .from-container .fromb-bottom-interactive-container.purple {
+  background: hsl(273.19, 77.05%, 11.96%);
+}
+body .main-container .from-container .fromb-bottom-interactive-container .circle-active {
+  height: 11px;
+  width: 11px;
+  border-radius: 50%;
+  background: hsl(6, 63%, 50%);
+}
+body .main-container .from-container .fromb-bottom-interactive-container .circle-active.dark {
+  background: hsl(6, 63%, 50%);
+}
+body .main-container .from-container .fromb-bottom-interactive-container .circle-active.white {
+  background: hsl(25.03, 99%, 39.41%);
+}
+body .main-container .from-container .fromb-bottom-interactive-container .circle-active.purple {
+  background: hsl(175.95, 100%, 43.53%);
+}
+body .main-container .from-container .fromb-bottom-interactive-container .circle-active:hover {
+  cursor: pointer;
+  background: #f96c5b;
+}
+body .main-container .from-container .fromb-bottom-interactive-container .circle-active:hover.purple {
+  background: hsl(176.64, 100%, 79.02%);
+}
+body .main-container .big-input-container {
+  margin-top: 20px;
+  width: 100%;
+}
+body .main-container .big-input-container .big-input {
+  height: 90px;
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  background: hsl(224, 36%, 15%);
+  color: white;
+  text-align: end;
+  padding: 10px;
+  font-size: 2.5em;
+}
+body .main-container .big-input-container .big-input.dark {
+  background: hsl(224, 36%, 15%);
+}
+body .main-container .big-input-container .big-input.white {
+  background: hsl(0, 100%, 98.1%);
+  color: black;
+}
+body .main-container .big-input-container .big-input.purple {
+  background: hsl(268.7, 74.19%, 12.16%);
+  color: hsl(52.8, 100%, 60.78%);
+}
+body .main-container .numbers-calculate-container {
+  display: grid;
+  background: hsl(223, 31%, 20%);
+  grid-template-columns: 85px 85px 85px 85px;
+  grid-row-gap: 10px;
+  height: 310px;
+  width: 100%;
+  padding: 25px;
+  border-radius: 10px;
+}
+body .main-container .numbers-calculate-container.dark {
+  background: hsl(223, 31%, 20%);
+}
+body .main-container .numbers-calculate-container.white {
+  background: hsl(0, 6.38%, 81.57%);
+}
+body .main-container .numbers-calculate-container.purple {
+  background: hsl(268, 71.43%, 12.35%);
+}
+@media screen and (max-width: 375px) {
+  body .main-container .numbers-calculate-container {
+    margin-top: 10px;
+    height: 70%;
+    grid-template-columns: 75px 75px 75px 75px;
+    padding: 18px;
+  }
+}
+body .main-container .numbers-calculate-container .all-numbers {
+  width: 70px;
+  height: 40px;
+  font-size: 18px;
+  border: outset;
+  border-radius: 5px;
+  background: hsl(0, 0%, 90%);
+}
+body .main-container .numbers-calculate-container .all-numbers.dark {
+  color: hsl(53.33, 9.28%, 19.02%);
+}
+body .main-container .numbers-calculate-container .all-numbers.white {
+  color: hsl(53.33, 9.28%, 19.02%);
+}
+body .main-container .numbers-calculate-container .all-numbers.purple {
+  background: hsl(268.8, 48.08%, 20.39%);
+  color: hsl(50, 100%, 64.71%);
+  border: aliceblue;
+}
+@media screen and (max-width: 375px) {
+  body .main-container .numbers-calculate-container .all-numbers {
+    width: 65px;
+    height: 70px;
+    font-size: 25px;
+  }
+}
+body .main-container .numbers-calculate-container .all-numbers:hover {
+  cursor: pointer;
+  background: #ffffff;
+}
+body .main-container .numbers-calculate-container .all-numbers:hover.purple {
+  background: hsl(267.5, 53.57%, 43.92%);
+}
+body .main-container .numbers-calculate-container .Delettle {
+  width: 70px;
+  height: 40px;
+  border: none;
+  color: white;
+  font-size: 18px;
+  border-radius: 5px;
+  background: hsl(225, 21%, 49%);
+}
+body .main-container .numbers-calculate-container .Delettle.dark {
+  background: hsl(225, 21%, 49%);
+}
+body .main-container .numbers-calculate-container .Delettle.white {
+  background: hsl(184.56, 41.36%, 37.45%);
+}
+body .main-container .numbers-calculate-container .Delettle.purple {
+  background: hsl(280.51, 89.31%, 25.69%);
+}
+@media screen and (max-width: 375px) {
+  body .main-container .numbers-calculate-container .Delettle {
+    width: 65px;
+    height: 70px;
+  }
+}
+body .main-container .numbers-calculate-container .Delettle:hover {
+  cursor: pointer;
+  background: #a2b3e1;
+}
+body .main-container .numbers-calculate-container .Delettle:hover.dark {
+  background: #a2b3e1;
+}
+body .main-container .numbers-calculate-container .Delettle:hover.white {
+  background: hsl(185.52, 39.01%, 56.27%);
+}
+body .main-container .numbers-calculate-container .Delettle:hover.purple {
+  background: hsl(280.16, 56.44%, 44.12%);
+}
+body .main-container .numbers-calculate-container .left-bottom {
+  width: 160px;
+  height: 50px;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  background: hsl(225, 21%, 49%);
+}
+body .main-container .numbers-calculate-container .left-bottom.dark {
+  background: hsl(225, 21%, 49%);
+}
+body .main-container .numbers-calculate-container .left-bottom.white {
+  background: hsl(184.56, 41.36%, 37.45%);
+}
+body .main-container .numbers-calculate-container .left-bottom.purple {
+  background: hsl(280.51, 89.31%, 25.69%);
+}
+body .main-container .numbers-calculate-container .left-bottom:hover {
+  cursor: pointer;
+  background: #a2b3e1;
+}
+body .main-container .numbers-calculate-container .left-bottom:hover.dark {
+  background: #a2b3e1;
+}
+body .main-container .numbers-calculate-container .left-bottom:hover.white {
+  background: hsl(185.52, 39.01%, 56.27%);
+}
+body .main-container .numbers-calculate-container .left-bottom:hover.purple {
+  background: hsl(280.16, 56.44%, 44.12%);
+}
+body .main-container .numbers-calculate-container .right-bottom {
+  width: 160px;
+  height: 50px;
+  border-radius: 10px;
+  color: white;
+  border: none;
+  background: hsl(6, 63%, 50%);
+}
+body .main-container .numbers-calculate-container .right-bottom.dark {
+  background: hsl(6, 63%, 50%);
+}
+body .main-container .numbers-calculate-container .right-bottom.white {
+  background: hsl(25.03, 99%, 39.41%);
+}
+body .main-container .numbers-calculate-container .right-bottom.purple {
+  background: hsl(175.95, 100%, 43.53%);
+  color: black;
+}
+body .main-container .numbers-calculate-container .right-bottom:hover {
+  cursor: pointer;
+  background: #f96c5b;
+}
+body .main-container .numbers-calculate-container .right-bottom:hover.dark {
+  background: #f96c5b;
+}
+body .main-container .numbers-calculate-container .right-bottom:hover.white {
+  background: hsl(25.03, 100%, 60.98%);
+}
+body .main-container .numbers-calculate-container .right-bottom:hover.purple {
+  background: hsl(176.64, 100%, 79.02%);
+}
+body .main-container .numbers-calculate-container .result-bottom-container {
+  display: flex;
+  width: 325px;
+  justify-content: center;
+  height: 40px;
+  gap: 15px;
+  border-radius: 10px;
+}
+@media screen and (max-width: 375px) {
+  body .main-container .numbers-calculate-container .result-bottom-container {
+    width: 285px;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */
